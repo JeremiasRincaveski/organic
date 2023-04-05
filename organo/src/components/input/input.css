@@ -1,0 +1,13 @@
+.input {
+    width: 100%;
+}
+
+.input input{
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: .3rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: 3px 1px;
+}
