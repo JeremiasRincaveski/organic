@@ -5,9 +5,19 @@ section {
     justify-content: center;
 }
 
+legend {
+    font-family: 'Prata', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+}
+
 form {
     box-sizing: border-box;
     width: 80%;
     padding: 2rem 5rem;
     background-color: #F6F6F6;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
