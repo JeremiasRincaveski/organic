@@ -1,20 +1,13 @@
-const Select = () => {
-    
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
+const Select = (props) => {
     
     return (
         <div>
-            <label className='label' for='times'>Time</label>
-            <select className='input' id='times'>
-                {times.map(time => <option key={time}>{time}</option>)}
+            <label className='label' htmlFor='times'>Time</label>
+            <select 
+                onChange={evento => props.aoAlterado(evento.target.value)}
+                value={props.value} className='input' id='times'>
+                    <option value=''></option>
+                    {props.times.map(time => <option key={time}>{time}</option>)}
             </select>
         </div>
     )
